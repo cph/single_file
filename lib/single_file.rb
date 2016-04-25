@@ -7,7 +7,7 @@ module SingleFile
 
   def with_file_lock(filepath)
     lockfile = create_lockfile(filepath)
-    return lockfile.close unless obtain_file_lock(lockfile)
+    return unless obtain_file_lock(lockfile)
     yield
   ensure
     lockfile.close
