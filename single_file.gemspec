@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["ben.govero@cph.org"]
 
   spec.summary       = %q{Run a block of code only if a system level file lock can be obtained for a given filepath.}
-  spec.homepage      = "TODO: http://github.com/ben5516/single_file"
+  spec.homepage      = "http://github.com/cph/single_file"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
